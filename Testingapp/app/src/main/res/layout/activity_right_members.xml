@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_right_members"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ajzz.testingapp.Right_members">
+
+    <TextView
+        android:text="Member Name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/memberName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:id="@+id/phoneNumber"
+        android:layout_below="@+id/memberName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/groupName"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/groupName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/meetingAttended" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/meetingAttended"
+        android:layout_marginTop="49dp"
+        android:id="@+id/ok" />
+</RelativeLayout>
